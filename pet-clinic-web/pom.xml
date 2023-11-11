@@ -10,31 +10,28 @@
     <packaging>jar</packaging>
     <name>pet-clinic-web Maven Webapp</name>
     <url>http://maven.apache.org</url>
-    <dependencyManagement>
-
-
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            <dependency>-->
+<!--                <groupId>guru.springframework</groupId>-->
+<!--                <artifactId>pet-clinic-data</artifactId>-->
+<!--                <version>0.0.1-SNAPSHOT</version>-->
+<!--    -->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
     <dependencies>
         <dependency>
             <groupId>guru.springframework</groupId>
             <artifactId>pet-clinic-data</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-
         </dependency>
-        </dependencies>
-    </dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>guru.springframework</groupId>
-            <artifactId>pet-clinic-data</artifactId>
-<!--            <version>0.0.1-SNAPSHOT</version>-->
-
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>junit</groupId>-->
+<!--            <artifactId>junit</artifactId>-->
+<!--            <version>3.8.1</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -52,7 +49,6 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
