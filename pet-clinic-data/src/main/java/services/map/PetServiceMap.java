@@ -24,11 +24,11 @@ public class PetServiceMap extends AbstractMapService<Pet,Long> implements CrudS
 
     @Override
     public Pet save(Pet object) {
-        return this.save(object.getId(),object);
+        return super.save(object.getId(),object);
     }
 
     @Override
     public Pet findById(Long id) {
-        return this.findById(id);
+        return super.findById(id);
     }
 }
