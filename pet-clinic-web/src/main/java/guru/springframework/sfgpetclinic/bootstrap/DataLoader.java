@@ -3,12 +3,12 @@ package guru.springframework.sfgpetclinic.bootstrap;
 
 import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.model.Vet;
+import guru.springframework.sfgpetclinic.services.OwnerService;
+import guru.springframework.sfgpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import services.OwnerService;
-import services.VetService;
-import services.map.OwnerServiceMap;
-import services.map.VetServiceMap;
+
+
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -16,9 +16,17 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
+
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+
+        /*
+        The implementation below is hard implementation, we want Spring to implement that, so we comment these lines
         ownerService = new OwnerServiceMap();
         vetService = new VetServiceMap();
+
+         */
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
